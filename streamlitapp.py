@@ -36,15 +36,15 @@ if st.button("Predict Survival"):
     })
 
     # Debugging: Check input values
-    st.write("Input Features DataFrame:")
-    st.write(input_features)
+    # st.write("Input Features DataFrame:")
+    # st.write(input_features)
     
     # Preprocess the input using the pre-trained preprocessor
     try:
         input_preprocessed = preprocessor.transform(input_features)  # Preprocess the input
         
         # Print the preprocessed shape and compare it with what the model expects
-        st.write(f"Preprocessed Input Shape: {input_preprocessed.shape}")
+        # st.write(f"Preprocessed Input Shape: {input_preprocessed.shape}")
         
         # Predict the class using the pre-trained model
         prediction = model.predict(input_preprocessed)[0]
@@ -71,6 +71,6 @@ try:
     })
     transformed_sample = preprocessor.transform(sample_input)
     expected_shape = transformed_sample.shape[1]
-    st.write(f"Expected number of features after preprocessing: {expected_shape}")
+    # st.write(f"Expected number of features after preprocessing: {expected_shape}")
 except Exception as e:
     st.error(f"Error occurred during shape check: {e}")
