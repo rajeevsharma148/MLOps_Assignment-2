@@ -12,4 +12,4 @@ ENV WEBSITED_PORT=80
 # Expose port 80 to the outside
 EXPOSE 80
 
-CMD ["python3", "app.py"]
+CMD ["python3", "flaskapp.py"]
