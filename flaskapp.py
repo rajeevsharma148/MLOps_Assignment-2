@@ -43,6 +43,6 @@ def predict():
     # Return the prediction result as JSON
     return jsonify({'prediction': int(prediction[0])})
 
-# Run the Flask app
-if __name__ == '__main__':
-    app.run(debug=True)
+# Run the Flask application
+if __name__ == "__main__":
+    app.run(debug=False, host="0.0.0.0", port=80)
