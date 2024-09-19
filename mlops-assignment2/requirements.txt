@@ -1,7 +1,0 @@
-flask
-scikit-learn
-joblib
-pandas
-azure-functions
-
-

@@ -1,7 +1,5 @@
 dataprep
 scikit-learn
-streamlit
-flask
 joblib
 pandas
 numpy
